@@ -47,6 +47,7 @@ class SignupPage {
     }
 
     alertMessageShouldBe(expectedMessage) {
+        //validar teste
         //validar cpf inválido
         //cy.get('.alert-error').should('have.text', expectedMessage)
         cy.contains('.alert-error', expectedMessage).should('be.visible')
